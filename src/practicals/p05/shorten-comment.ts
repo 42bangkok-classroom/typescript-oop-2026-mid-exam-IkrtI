@@ -1,4 +1,4 @@
-const comment = "TypeScript is a strongly typed programming language";
+export const comment = "TypeScript is a strongly typed programming language";
 
 function shortenComment(commentT: string): string {
   return commentT
