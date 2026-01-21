@@ -12,10 +12,10 @@ export function sortPersons(personsArr: Person[]): Person[] {
     if (age < 0|| age > 100) continue;
     arr.push(personsArr[index])
   }
-  return arr.sort();
+  return arr
 }
 
-const personsx: Person[] = [
+const persons: Person[] = [
   { firstName: "Somchai", lastName: "Jaidee", age: 30 },
   { firstName: "", lastName: "Test", age: 20 },
   { firstName: "Anan", lastName: "Sukjai", age: 25 },
