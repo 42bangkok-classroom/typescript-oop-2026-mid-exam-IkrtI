@@ -1,6 +1,7 @@
 // Write your code below
 const input = process.argv.slice(2)
 const number = Number(input)
+
 if (number >= 0 && number <= 49) {
     console.log("Grade is F")
 } else if (number >= 0 && number <= 59) {

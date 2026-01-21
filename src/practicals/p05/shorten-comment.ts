@@ -1,8 +1,15 @@
-const comment = "TypeScript is a strongly typed programming language";
+// Write your code below
+const input = process.argv.slice(2);
+const number = Number(input);
 
-export function shortenComment(commentT: string): string {
-  return commentT
-    .split(" ")
-    .filter((m) => m.length >= 5 && m.length <= 10)
-    .join(" ");
+if (number < 0) return;
+for (let i = 1; i <= number; i++) {
+  let x = "";
+  for (let j = 0; j < number - i; j++) {
+    x += " ";
+  }
+  for (let k = i; k >= 1; k--) {
+    x += `${k}`;
+  }
+  console.log(x);
 }

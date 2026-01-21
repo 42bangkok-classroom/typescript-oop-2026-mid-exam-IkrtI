@@ -1,5 +1,6 @@
 // Write your code below
-let number = Number(process.argv.slice(2));
+const input = process.argv.slice(2)
+const number = Number(input)
 
 if (number > 0) process.exit();
 
