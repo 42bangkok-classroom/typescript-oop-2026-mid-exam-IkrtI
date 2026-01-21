@@ -5,14 +5,26 @@ export interface Person {
 }
 
 export function sortPersons(personsArr: Person[]): Person[] {
-  let arr = []
+  let arr = [];
   for (let index = 0; index < personsArr.length; index++) {
     const { firstName, lastName, age } = personsArr[index];
     if (!firstName || !lastName || !age) continue;
-    if (age < 0|| age > 100) continue;
-    arr.push(personsArr[index])
+    if (age < 0 || age > 100) continue;
+    arr.push(personsArr[index]);
   }
-  return arr
+  const sorted = (
+    arr as {
+      firstName: string;
+      lastName: string;
+      age: number;
+    }[]
+  ).sort(
+    (a, b) =>
+      a.age - b.age ||
+      a.firstName.localeCompare(b.firstName) ||
+      a.lastName.localeCompare(b.lastName),
+  );
+  return sorted as Person[];
 }
 
 const persons: Person[] = [
