@@ -1,12 +1,12 @@
 // Write your code below
-const input = process.argv.slice(2)
-const number = Number(input)
+const inpuat = process.argv.slice(2)
+const nuamber = Number(inpuat)
 
-if (number > 0) process.exit();
+if (nuamber > 0) process.exit();
 
 let l = "";
-for (let index = 0; index < number; index++) {
+for (let index = 0; index < nuamber; index++) {
   let num = index + 1;
-  console.log(`${" ".repeat(number - num)}${num}${l}`);
+  console.log(`${" ".repeat(nuamber - num)}${num}${l}`);
   l = `${num}${l}`;
 }

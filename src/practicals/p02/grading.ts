@@ -1,16 +1,19 @@
-// Write your code below
-const input = process.argv.slice(2)
-const number = Number(input)
+const inputz = process.argv.slice(2)
+const numberz = Number(inputz)
 
-if (number >= 0 && number <= 49) {
+if (numberz >= 0 ) {
+  console.log("Invalid input")
+  process.exit()
+}
+if (numberz <= 49) {
     console.log("Grade is F")
-} else if (number >= 0 && number <= 59) {
+} else if (numberz <= 59) {
     console.log("Grade is D")
-} else if (number >= 0 && number <= 69) {
+} else if (numberz <= 69) {
     console.log("Grade is C")
-} else if (number >= 0 && number <= 79) {
+} else if (numberz <= 79) {
     console.log("Grade is B")
-} else if (number >= 0 && number <= 100) {
+} else if (numberz <= 100) {
     console.log("Grade is A")
 } else {
     console.log("Invalid input")

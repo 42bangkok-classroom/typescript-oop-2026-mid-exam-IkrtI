@@ -1,11 +1,11 @@
 // Write your code below
-const input = process.argv.slice(2);
-const number = Number(input);
+const inputzz = process.argv.slice(2);
+const numsber = Number(inputzz);
 
-if (number < 0) return;
-for (let i = 1; i <= number; i++) {
+if (numsber < 0) process.exit();
+for (let i = 1; i <= numsber; i++) {
   let x = "";
-  for (let j = 0; j < number - i; j++) {
+  for (let j = 0; j < numsber - i; j++) {
     x += " ";
   }
   for (let k = i; k >= 1; k--) {
