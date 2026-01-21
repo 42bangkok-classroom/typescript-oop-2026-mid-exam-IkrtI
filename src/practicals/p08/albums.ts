@@ -1,4 +1,4 @@
-interface FullAlbumx {
+interface FullAlbum {
   userId: number;
   id: number;
   title: string;
@@ -25,7 +25,7 @@ const ALBUMS_URL = "https://jsonplaceholder.typicode.com/albums";
 
 export async function mapPhotoToAlbum(
   userIds?: number[]
-): Promise<FullAlbumx[]> {
+): Promise<FullAlbum[]> {
   if (!userIds || userIds.length == 0) return [];
   let photos: Photo[] = (await axios({
     url: PHOTOS_URL,
@@ -43,10 +43,9 @@ export async function mapPhotoToAlbum(
       return [];
     })) as Album[];
   if (!album) return [];
-  const Full: FullAlbumx[] = [];
+  const Full: FullAlbum[] = [];
   for (let index = 0; index < userIds.length; index++) {
     const userId = userIds[index];
-    let img: Photo[] = [];
     let albumx: Album[] = [];
     albumx = album.filter((d) => d.userId == userId);
     albumx.forEach((alb) => {

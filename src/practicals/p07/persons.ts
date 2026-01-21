@@ -15,7 +15,7 @@ export function sortPersons(personsArr: Personx[]): Personx[] {
   return arr;
 }
 
-const persons: Personx[] = [
+const personsx: Personx[] = [
   { firstName: "Somchai", lastName: "Jaidee", age: 30 },
   { firstName: "", lastName: "Test", age: 20 },
   { firstName: "Anan", lastName: "Sukjai", age: 25 },
