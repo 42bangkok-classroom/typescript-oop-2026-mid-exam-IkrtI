@@ -3,9 +3,9 @@ const numberz = Number(inputz)
 
 if (numberz >= 0 ) {
   console.log("Invalid input")
-  process.exit()
+
 }
-if (numberz <= 49) {
+else if (numberz <= 49) {
     console.log("Grade is F")
 } else if (numberz <= 59) {
     console.log("Grade is D")
