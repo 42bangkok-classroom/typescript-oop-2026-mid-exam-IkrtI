@@ -7,7 +7,7 @@ export function getUniqueNumbers(arr1: number[], arr2: number[]): number[] {
   for (let index = 0; index < arr.length; index++) {
     const num = arr[index];
     if (rarr.includes(num)) {
-      rarr.filter(n=>n!==num)
+      rarr=rarr.filter(n=>n!==num)
       continue;
     }
     rarr.push(num);

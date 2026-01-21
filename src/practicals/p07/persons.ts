@@ -1,10 +1,10 @@
-interface Person {
+interface Personx {
   firstName?: string;
   lastName?: string;
   age?: number;
 }
 
-export function sortPersons(personsArr: Person[]): Person[] {
+export function sortPersons(personsArr: Personx[]): Personx[] {
   let arr = []
   for (let index = 0; index < personsArr.length; index++) {
     const { firstName, lastName, age } = personsArr[index];
@@ -15,7 +15,7 @@ export function sortPersons(personsArr: Person[]): Person[] {
   return arr;
 }
 
-const persons: Person[] = [
+const persons: Personx[] = [
   { firstName: "Somchai", lastName: "Jaidee", age: 30 },
   { firstName: "", lastName: "Test", age: 20 },
   { firstName: "Anan", lastName: "Sukjai", age: 25 },
