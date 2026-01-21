@@ -1,6 +1,6 @@
 // Write your code below
 
-let number = Number(process.argv[2]);
+let number = Number(process.argv.slice(2));
 
 
 if (!number || Number.isNaN(number) || number <= 0) {
@@ -17,6 +17,6 @@ if (!number || Number.isNaN(number) || number <= 0) {
     if (mod5 == Math.ceil(mod5)) {
       text += "Buzz";
     }
-    console.log(!text ? index : text);
+    console.log(!text ? `${index}` : text);
   }
 }
