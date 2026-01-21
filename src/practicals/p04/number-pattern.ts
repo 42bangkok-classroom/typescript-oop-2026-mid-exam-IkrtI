@@ -1,7 +1,7 @@
 // Write your code below
 let number = Number(process.argv.slice(2));
 
-if ((!number || Number.isNaN(number) || number <= -1) && number !== 0) {
+if ((!number  || number <= -1) && number !== 0) {
   process.exit();
 }
 let l = "";

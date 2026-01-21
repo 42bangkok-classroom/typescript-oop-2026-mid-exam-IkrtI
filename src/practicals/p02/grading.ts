@@ -1,8 +1,8 @@
 // Write your code below
+let input = process.argv.slice(2)
+let number = Number(input);
 
-let number = Number(process.argv.slice(2));
-
-if ((!number || Number.isNaN(number) || number <= -1) && number !== 0) {
+if ((!number  || number <= -1) && number !== 0) {
   console.log("Invalid input");
 } else if (number <= 49) {
   console.log("Grade is F");

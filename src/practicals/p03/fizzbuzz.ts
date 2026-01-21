@@ -3,7 +3,7 @@
 let number = Number(process.argv.slice(2));
 
 
-if (!number || Number.isNaN(number) || number <= 0) {
+if (!number  || number <= 0) {
   process.exit();
 } else {
   for (let index = 0; index < number; index++) {
