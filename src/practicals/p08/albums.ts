@@ -1,16 +1,16 @@
-interface FullAlbum {
+export interface FullAlbum {
   userId: number;
   id: number;
   title: string;
   photos: Photo[];
 }
-interface Album {
+export interface Album {
   userId: number;
   id: number;
   title: string;
 }
 
-interface Photo {
+export interface Photo {
   albumId: number;
   id: number;
   title: string;

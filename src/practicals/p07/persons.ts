@@ -1,4 +1,4 @@
-interface Personx {
+export interface Personx {
   firstName?: string;
   lastName?: string;
   age?: number;
