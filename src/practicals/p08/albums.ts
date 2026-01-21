@@ -27,17 +27,11 @@ export async function mapPhotoToAlbum(
   userIds?: number[]
 ): Promise<FullAlbum[]> {
   if (!userIds || userIds.length == 0) return [];
-  let photos: Photo[] = await axios.get(PHOTOS_URL)
-    .then((res) => res.data)
-    .catch((x) => {
-      return [];
-    })
+  let XX = await axios.get(PHOTOS_URL);
+  const xx = await axios.get(ALBUMS_URL);
+  let photos: Photo[] = XX.data;
   if (!photos) return [];
-  let album: Album[] = await axios.get(ALBUMS_URL)
-      .then((res) => res.data)
-      .catch((x) => {
-        return [];
-      })
+  let album: Album[] = xx.data;
   if (!album) return [];
   const Full: FullAlbum[] = [];
   for (let index = 0; index < userIds.length; index++) {

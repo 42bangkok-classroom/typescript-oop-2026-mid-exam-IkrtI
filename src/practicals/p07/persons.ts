@@ -12,7 +12,7 @@ export function sortPersons(personsArr: Person[]): Person[] {
     if (age < 0|| age > 100) continue;
     arr.push(personsArr[index])
   }
-  return arr;
+  return arr.sort();
 }
 
 const personsx: Person[] = [
