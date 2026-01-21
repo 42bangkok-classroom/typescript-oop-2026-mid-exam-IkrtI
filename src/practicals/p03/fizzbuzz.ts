@@ -9,5 +9,5 @@ for (let index = 1; index <= numbera; index++) {
   var text = "";
   if (mod3) text += "Fizz";
   if (mod5) text += "Buzz";
-  console.log(!text ? `${index}` : text);
+  console.log(!text ? index : text);
 }
