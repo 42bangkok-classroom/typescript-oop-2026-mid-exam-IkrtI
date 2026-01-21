@@ -64,4 +64,4 @@ export async function mapPhotoToAlbum(
   return Full;
 }
 
-// mapPhotoToAlbum([1]);
+mapPhotoToAlbum([1])
