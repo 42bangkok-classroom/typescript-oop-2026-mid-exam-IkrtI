@@ -1,9 +1,9 @@
 // Write your code below
 
-let input = process.argv[2];
-let number = Number(input);
+let number = Number(process.argv[2]);
 
-if (!input || !number || number <= 0) {
+
+if (!number || Number.isNaN(number) || number <= 0) {
   process.exit();
 } else {
   for (let index = 0; index < number; index++) {
