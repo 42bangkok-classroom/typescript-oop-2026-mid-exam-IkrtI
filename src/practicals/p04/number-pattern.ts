@@ -1,7 +1,6 @@
 // Write your code below
-let input: string = process.argv[2];
-let number: number = Number(input);
-
+let input = process.argv[2];
+let number = Number(input);
 if ((!input || !number || number <= -1) && number !== 0) {
   process.exit();
 }
